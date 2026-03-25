@@ -1,0 +1,1 @@
+-o c:/My_Designs/try2/pv2/compile -lc c:/My_Designs/try2/library.cfg -fl c:/My_Designs/try2/pv2/projlib.cfg -pli "C:/Aldec/Active-HDL-Student-Edition/bin/systf.dll" -O2 -sve -msg 5 -sv2k17 -work pv2 c:/My_Designs/try2/pv2/src/full1.v 

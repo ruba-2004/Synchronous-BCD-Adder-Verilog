@@ -1,0 +1,358 @@
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+tb_bcd_adder_ndigit_with_lookahead tb_bcd_adder_ndigit_with_lookahead
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Finished. Using existing simulator library
+# SLP: 174 (82.86%) primitives and 36 (17.14%) other processes in SLP
+# SLP: 152 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 612 kB (elbread=430 elab2=46 kernel=135 sdf=0)
+# KERNEL: ASDB file was created in location c:\My_Designs\try2\pv2\src\wave.asdb
+#  7:41 PM, Tuesday, June 17, 2025
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'c:/My_Designs/try2/pv2/src/wave.asdb'.
+run
+# KERNEL: Time	 A+B=Sum Cout
+# KERNEL:                 3200ns	 001+002=0003 Cout:0
+# KERNEL:                 6400ns	 050+050=0100 Cout:0
+# KERNEL:                 9600ns	 099+001=0100 Cout:0
+# KERNEL:                12800ns	 123+321=0444 Cout:0
+# KERNEL:                16000ns	 800+150=0950 Cout:0
+# KERNEL:                19200ns	 500+500=1000 Cout:1
+# KERNEL:                22400ns	 987+012=0999 Cout:0
+# KERNEL:                25600ns	 999+001=1000 Cout:1
+# KERNEL:                28800ns	 100+900=1000 Cout:1
+# KERNEL:                32000ns	 234+876=1110 Cout:1
+# KERNEL:                35200ns	 000+000=0000 Cout:0
+# KERNEL:                38400ns	 001+999=1000 Cout:1
+# KERNEL:                41600ns	 222+333=0555 Cout:0
+# KERNEL:                44800ns	 090+090=0180 Cout:0
+# KERNEL:                48000ns	 800+800=1600 Cout:1
+# RUNTIME: Info: RUNTIME_0068 tb2.v (120): $finish called.
+# KERNEL: Time: 48 us,  Iteration: 0,  Instance: /tb_bcd_adder_ndigit_with_lookahead,  Process: @INITIAL#64_3@.
+# KERNEL: stopped at time: 48 us
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+tb_bcd_adder_ndigit_with_lookahead tb_bcd_adder_ndigit_with_lookahead
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+alog -O2 -sve -msg 5 -sv2k17 -work pv2 $dsn/src/tb2.v
+# Unit top modules: tb_bcd_adder_ndigit_with_lookahead.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.3 [s]
+# SLP: Finished : 0.3 [s]
+# SLP: 174 (82.86%) primitives and 36 (17.14%) other processes in SLP
+# SLP: 152 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 0.3 [s].
+# KERNEL: SLP loading done - time: 0.9 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 604 kB (elbread=430 elab2=38 kernel=135 sdf=0)
+# KERNEL: ASDB file was created in location c:\My_Designs\try2\pv2\src\wave.asdb
+#  7:47 PM, Tuesday, June 17, 2025
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'c:/My_Designs/try2/pv2/src/wave.asdb'.
+run
+# KERNEL: Time	 A+B=Sum Cout
+# KERNEL:                  200ns	 001+002=000x Cout:0
+# KERNEL: ?ERROR at                  200ns
+# KERNEL:                  400ns	 050+050=0120 Cout:0
+# KERNEL: ?ERROR at                  400ns
+# KERNEL:                  600ns	 099+001=0248 Cout:0
+# KERNEL: ?ERROR at                  600ns
+# KERNEL:                  800ns	 123+321=0444 Cout:0
+# KERNEL:                 1000ns	 800+150=0150 Cout:0
+# KERNEL: ?ERROR at                 1000ns
+# RUNTIME: Info: RUNTIME_0068 tb2.v (89): $finish called.
+# KERNEL: Time: 1 us,  Iteration: 0,  Instance: /tb_bcd_adder_ndigit_with_lookahead,  Process: @INITIAL#64_3@.
+# KERNEL: stopped at time: 1 us
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+tb_bcd_adder_ndigit_with_lookahead tb_bcd_adder_ndigit_with_lookahead
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+alog -O2 -sve -msg 5 -sv2k17 -work pv2 $dsn/src/tb2.v
+# Unit top modules: tb_bcd_adder_ndigit_with_lookahead.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.3 [s]
+# SLP: Finished : 0.3 [s]
+# SLP: 174 (82.86%) primitives and 36 (17.14%) other processes in SLP
+# SLP: 152 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 0.3 [s].
+# KERNEL: SLP loading done - time: 1.2 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 614 kB (elbread=430 elab2=48 kernel=135 sdf=0)
+# KERNEL: ASDB file was created in location c:\My_Designs\try2\pv2\src\wave.asdb
+#  7:49 PM, Tuesday, June 17, 2025
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'c:/My_Designs/try2/pv2/src/wave.asdb'.
+run
+# KERNEL: Time	 A+B=Sum Cout
+# KERNEL:                  300ns	 001+002=0003 Cout:0
+# KERNEL:                  600ns	 050+050=0100 Cout:0
+# KERNEL:                  900ns	 099+001=0100 Cout:0
+# KERNEL:                 1200ns	 123+321=0444 Cout:0
+# KERNEL:                 1500ns	 800+150=0950 Cout:0
+# KERNEL:                 1800ns	 500+500=1000 Cout:1
+# KERNEL:                 2100ns	 987+012=0999 Cout:0
+# KERNEL:                 2400ns	 999+001=1000 Cout:1
+# KERNEL:                 2700ns	 100+900=1000 Cout:1
+# KERNEL:                 3000ns	 234+876=1110 Cout:1
+# KERNEL:                 3300ns	 000+000=0000 Cout:0
+# KERNEL:                 3600ns	 001+999=1000 Cout:1
+# KERNEL:                 3900ns	 222+333=0555 Cout:0
+# KERNEL:                 4200ns	 090+090=0180 Cout:0
+# KERNEL:                 4500ns	 800+800=1600 Cout:1
+# RUNTIME: Info: RUNTIME_0068 tb2.v (117): $finish called.
+# KERNEL: Time: 4500 ns,  Iteration: 0,  Instance: /tb_bcd_adder_ndigit_with_lookahead,  Process: @INITIAL#63_3@.
+# KERNEL: stopped at time: 4500 ns
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+tb_bcd_adder_ndigit_with_lookahead tb_bcd_adder_ndigit_with_lookahead
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+alog -O2 -sve -msg 5 -sv2k17 -work pv2 $dsn/src/tb2.v
+# Warning: VCP2641 tb2.v : (113, 18): Redundant digits given in number 12'h1998.
+# Unit top modules: tb_bcd_adder_ndigit_with_lookahead.
+# Compile success 0 Errors 1 Warnings  Analysis time: 0[s].
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.3 [s]
+# SLP: Finished : 0.3 [s]
+# SLP: 174 (82.86%) primitives and 36 (17.14%) other processes in SLP
+# SLP: 152 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 0.3 [s].
+# KERNEL: SLP loading done - time: 0.7 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 614 kB (elbread=430 elab2=48 kernel=135 sdf=0)
+# KERNEL: ASDB file was created in location c:\My_Designs\try2\pv2\src\wave.asdb
+#  7:49 PM, Tuesday, June 17, 2025
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'c:/My_Designs/try2/pv2/src/wave.asdb'.
+run
+# KERNEL: Time	 A+B=Sum Cout
+# KERNEL:                  300ns	 001+002=0003 Cout:0
+# KERNEL:                  600ns	 050+050=0100 Cout:0
+# KERNEL:                  900ns	 099+001=0100 Cout:0
+# KERNEL:                 1200ns	 123+321=0444 Cout:0
+# KERNEL:                 1500ns	 800+150=0950 Cout:0
+# KERNEL:                 1800ns	 500+500=1000 Cout:1
+# KERNEL:                 2100ns	 987+012=0999 Cout:0
+# KERNEL:                 2400ns	 999+001=1000 Cout:1
+# KERNEL:                 2700ns	 100+900=1000 Cout:1
+# KERNEL:                 3000ns	 234+876=1110 Cout:1
+# KERNEL:                 3300ns	 000+000=0000 Cout:0
+# KERNEL:                 3600ns	 001+999=1000 Cout:1
+# KERNEL:                 3900ns	 222+333=0555 Cout:0
+# KERNEL:                 4200ns	 090+090=0180 Cout:0
+# KERNEL:                 4500ns	 999+999=1998 Cout:1
+# RUNTIME: Info: RUNTIME_0068 tb2.v (117): $finish called.
+# KERNEL: Time: 4500 ns,  Iteration: 0,  Instance: /tb_bcd_adder_ndigit_with_lookahead,  Process: @INITIAL#63_3@.
+# KERNEL: stopped at time: 4500 ns
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+alog -O2 -sve -msg 5 -sv2k17 -work pv2 $dsn/src/tb2.v
+# Warning: VCP2641 tb2.v : (113, 18): Redundant digits given in number 12'h1998.
+# Unit top modules: tb_bcd_adder_ndigit_with_lookahead.
+# Compile success 0 Errors 1 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -sve -msg 5 -sv2k17 -work pv2 $dsn/src/tb2.v
+# Unit top modules: tb_bcd_adder_ndigit_with_lookahead.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+asim -O5 +access +r +m+tb_bcd_adder_ndigit_with_lookahead tb_bcd_adder_ndigit_with_lookahead
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.3 [s]
+# SLP: Finished : 0.3 [s]
+# SLP: 174 (82.86%) primitives and 36 (17.14%) other processes in SLP
+# SLP: 152 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 0.3 [s].
+# KERNEL: SLP loading done - time: 1.2 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 614 kB (elbread=430 elab2=48 kernel=135 sdf=0)
+# KERNEL: ASDB file was created in location c:\My_Designs\try2\pv2\src\wave.asdb
+#  9:01 PM, Tuesday, June 17, 2025
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'c:/My_Designs/try2/pv2/src/wave.asdb'.
+run
+# KERNEL: Time	 A+B=Sum Cout
+# KERNEL:                  300ns	 001+002=0003 Cout:0
+# KERNEL:                  600ns	 050+050=0100 Cout:0
+# KERNEL:                  900ns	 099+001=0100 Cout:0
+# KERNEL:                 1200ns	 123+321=0444 Cout:0
+# KERNEL:                 1500ns	 800+150=0950 Cout:0
+# KERNEL:                 1800ns	 500+500=1000 Cout:1
+# KERNEL:                 2100ns	 987+012=0999 Cout:0
+# KERNEL:                 2400ns	 999+001=1000 Cout:1
+# KERNEL:                 2700ns	 100+900=1000 Cout:1
+# KERNEL:                 3000ns	 234+876=1110 Cout:1
+# KERNEL:                 3300ns	 000+000=0000 Cout:0
+# KERNEL:                 3600ns	 001+999=1000 Cout:1
+# KERNEL:                 3900ns	 222+333=0555 Cout:0
+# KERNEL:                 4200ns	 090+090=0180 Cout:0
+# KERNEL:                 4500ns	 999+999=1998 Cout:1
+# KERNEL: ?ERROR at                 4500ns
+# RUNTIME: Info: RUNTIME_0068 tb2.v (117): $finish called.
+# KERNEL: Time: 4500 ns,  Iteration: 0,  Instance: /tb_bcd_adder_ndigit_with_lookahead,  Process: @INITIAL#63_3@.
+# KERNEL: stopped at time: 4500 ns
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+# VSIM: 1 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'c:/My_Designs/try2/pv2/src/wave.asdb'.
+# VSIM: 1 object(s) traced.
+# VSIM: 1 object(s) traced.
+# VSIM: 1 object(s) traced.
+# VSIM: 1 object(s) traced.
+# VSIM: 1 object(s) traced.
+run
+run
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+tb_bcd_adder_ndigit_with_lookahead tb_bcd_adder_ndigit_with_lookahead
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Finished. Using existing simulator library
+# SLP: 174 (82.86%) primitives and 36 (17.14%) other processes in SLP
+# SLP: 152 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 614 kB (elbread=430 elab2=48 kernel=135 sdf=0)
+# KERNEL: ASDB file was created in location c:\My_Designs\try2\pv2\src\wave.asdb
+#  9:02 PM, Tuesday, June 17, 2025
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'c:/My_Designs/try2/pv2/src/wave.asdb'.
+# Waveform file 'untitled.awc' connected to 'c:/My_Designs/try2/pv2/src/wave.asdb'.
+run
+# KERNEL: Time	 A+B=Sum Cout
+# KERNEL:                  300ns	 001+002=0003 Cout:0
+# KERNEL:                  600ns	 050+050=0100 Cout:0
+# KERNEL:                  900ns	 099+001=0100 Cout:0
+# KERNEL:                 1200ns	 123+321=0444 Cout:0
+# KERNEL:                 1500ns	 800+150=0950 Cout:0
+# KERNEL:                 1800ns	 500+500=1000 Cout:1
+# KERNEL:                 2100ns	 987+012=0999 Cout:0
+# KERNEL:                 2400ns	 999+001=1000 Cout:1
+# KERNEL:                 2700ns	 100+900=1000 Cout:1
+# KERNEL:                 3000ns	 234+876=1110 Cout:1
+# KERNEL:                 3300ns	 000+000=0000 Cout:0
+# KERNEL:                 3600ns	 001+999=1000 Cout:1
+# KERNEL:                 3900ns	 222+333=0555 Cout:0
+# KERNEL:                 4200ns	 090+090=0180 Cout:0
+# KERNEL:                 4500ns	 999+999=1998 Cout:1
+# KERNEL: ?ERROR at                 4500ns
+# RUNTIME: Info: RUNTIME_0068 tb2.v (117): $finish called.
+# KERNEL: Time: 4500 ns,  Iteration: 0,  Instance: /tb_bcd_adder_ndigit_with_lookahead,  Process: @INITIAL#63_3@.
+# KERNEL: stopped at time: 4500 ns
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+alog -O2 -sve -msg 5 -sv2k17 -work pv2 $dsn/src/full1.v
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+# Waveform file 'c:/My_Designs/try2/pv2/src/untitled.awc' connected to 'c:/My_Designs/try2/pv2/src/untitled.asdb'.
+# Adding file c:\My_Designs\try2\pv2\src\untitled.asdb ... Done
+# Adding file c:\My_Designs\try2\pv2\src\untitled.awc ... Done

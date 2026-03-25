@@ -1,0 +1,28 @@
+Active-HDL 15.0.261.9132 2025-06-17 21:02:12
+
+Elaboration top modules:
+Verilog Module                tb_bcd_adder_ndigit_with_lookahead
+
+
+------------------------------------------------------------------------------------------------------
+Verilog Module                     | Library | Info | Compiler Version          | Compilation Options
+------------------------------------------------------------------------------------------------------
+tb_bcd_adder_ndigit_with_lookahead | pv2     |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
+bcd_adder_ndigit_with_lookahead    | pv2     |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
+dff1                               | pv2     |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
+dff4                               | pv2     |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
+bcd_adder                          | pv2     |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
+cla_4bit_adder                     | pv2     |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
+------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------------
+Library                            | Comment
+------------------------------------------------------------------------------------------------------
+pv2                                | None
+------------------------------------------------------------------------------------------------------
+
+
+Simulation Options: asim -O5 +access +r +m+tb_bcd_adder_ndigit_with_lookahead tb_bcd_adder_ndigit_with_lookahead
+
+
+The performance of simulation is reduced. Version Student Edition
